@@ -1,18 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+	--asterisk-red: #e85c41;
+	--content-bg: skyblue;
+	--dark-blue: navy;
+}
+
 body {
+	margin: 0;
+	padding: 0;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	text-align: center;
+	font-family: "Noto Sans", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	color: var(--dark-blue);
 }
 
-p, a, h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6 {
+	padding: 0;
+	margin: 0;
+	font-family: "Dela Gothic One", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+}
+
+p, a {
 	padding: 0;
 	margin: 0;
 }
 
-body > div,
+.color-button {
+	padding: 0.5rem 1rem;
+	border: 0.125rem solid var(--dark-blue);
+	border-radius: 1rem;
+	border-bottom-width: 0.33rem;
+	transition: 0.125s;
+	color: var(--dark-blue);
+	background-color: gold;
+	font-weight: bold;
+}
+
+.color-button:hover {
+	border-bottom-width: 0.125rem;
+	cursor: pointer;
+}
+
+.asterisk {
+	color: var(--asterisk-red);
+	font-size: 150%;
+	font-weight: normal;
+	position: relative;
+	top: 5px;
+	font-family: serif;
+}
+
+body > div {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 1rem;
+	width: 100%;
+}
+
+#head {
+	background-color: var(--dark-blue);
+	padding: 2rem;
+	color: white;
+}
+
+#content {
+	background: linear-gradient(white, var(--content-bg) 25%, var(--content-bg) 75%, white);
+}
+
 #content > section {
+	margin: 2rem 0;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -21,9 +87,10 @@ body > div,
 }
 
 #signup {
-	padding: 1rem;
-	border: 1px solid black;
+	padding: 2rem;
+	border: 1px solid var(--dark-blue);
 	border-radius: 1rem;
+	border-width: 2px 4px 6px 2px;
 }
 
 #signup-form {
@@ -31,6 +98,7 @@ body > div,
 	flex-direction: column;
 	width: 100%;
 	text-align: left;
+	margin-bottom: 1rem;
 }
 
 #signup-form input {
@@ -39,6 +107,12 @@ body > div,
 
 #signup-form input[type="button"] {
 	margin-bottom: 0;
+}
+
+#foot {
+	width: 100%;
+	background-color: gold;
+	padding: 2rem;
 }
 
 #foot a {
@@ -55,7 +129,7 @@ body > div,
 
 .sm-icons > a {
 	text-decoration: none;
-	color: black;
+	color: inherit;
 	font-size: 1.5rem;
 }
 
