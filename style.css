@@ -17,6 +17,28 @@ body > div,
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	gap: 1rem;
+}
+
+#signup {
+	padding: 1rem;
+	border: 1px solid black;
+	border-radius: 1rem;
+}
+
+#signup-form {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	text-align: left;
+}
+
+#signup-form input {
+	margin-bottom: 1rem;
+}
+
+#signup-form input[type="button"] {
+	margin-bottom: 0;
 }
 
 #foot a {
