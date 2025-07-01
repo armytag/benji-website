@@ -1,0 +1,40 @@
+body {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+p, a, h1, h2, h3, h4, h5, h6 {
+	padding: 0;
+	margin: 0;
+}
+
+body > div,
+#content > section {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+#foot a {
+	text-decoration: none;
+	color: black;
+}
+
+#sm-icons {
+	display: flex;
+	flex-direction: row;
+	gap: 1rem;
+	width: min-content;
+}
+
+#sm-icons > a {
+	font-size: 1.5rem;
+}
+
+#copyright {
+	text-transform: uppercase;
+}
