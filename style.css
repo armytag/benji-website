@@ -24,14 +24,16 @@ body > div,
 	color: black;
 }
 
-#sm-icons {
+.sm-icons {
 	display: flex;
 	flex-direction: row;
 	gap: 1rem;
 	width: min-content;
 }
 
-#sm-icons > a {
+.sm-icons > a {
+	text-decoration: none;
+	color: black;
 	font-size: 1.5rem;
 }
 
