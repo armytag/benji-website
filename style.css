@@ -2,11 +2,14 @@
 
 :root {
 	--asterisk-red: #e85c41;
-	--content-bg: skyblue;
-	--dark-blue: navy;
+	--content-bg: #FAEBD780;
+	--dark-green: #155020;
+	--darker-green: #062510;
 }
 
 body {
+	width: 100vw;
+	overflow-x: hidden;
 	margin: 0;
 	padding: 0;
 	display: flex;
@@ -15,9 +18,9 @@ body {
 	align-items: center;
 	text-align: center;
 	font-family: "Noto Sans", sans-serif;
-	font-weight: 400;
+	font-weight: 500;
 	font-style: normal;
-	color: var(--dark-blue);
+	color: var(--dark-green);
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -35,13 +38,13 @@ p, a {
 
 .color-button {
 	padding: 0.5rem 1rem;
-	border: 0.125rem solid var(--dark-blue);
+	border: 0.125rem solid var(--darker-green);
 	border-radius: 1rem;
 	border-bottom-width: 0.33rem;
 	transition: 0.125s;
-	color: var(--dark-blue);
-	background-color: gold;
 	font-weight: bold;
+	color: white;
+	background-color: var(--dark-green);
 }
 
 .color-button:hover {
@@ -59,6 +62,7 @@ p, a {
 }
 
 body > div {
+	box-sizing: border-box;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -68,29 +72,81 @@ body > div {
 }
 
 #head {
-	background-color: var(--dark-blue);
+	background-image:
+		linear-gradient(to right, #fff0, #fffd 30%, #fffd 70%, #fff0),
+		url("images/lake-minnewaska-tall.jpg");
+	background-position: center;
+	background-size: cover;
 	padding: 2rem;
+	color: black;
+}
+
+#head h1, #head h2 {
+	color: var(--dark-green);
+}
+
+#nav {
+	background-color: var(--dark-green);
+}
+
+#nav menu {
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-direction: row;
+}
+
+#nav li {
+	list-style: none;
+	padding: 1rem 2rem;
+}
+
+#nav li:hover {
+	background-color: var(--darker-green);
+	cursor: pointer;
+}
+
+#nav a {
+	text-decoration: none;
 	color: white;
 }
 
 #content {
+	width: 100%;
+	padding: 0 2rem;
 	background: linear-gradient(white, var(--content-bg) 25%, var(--content-bg) 75%, white);
 }
 
 #content > section {
-	margin: 2rem 0;
+	margin: 1rem 0;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	gap: 1rem;
+	gap: 1.5rem;
+}
+
+#save-the-date {
+	max-width: 72ch;
+	line-height: 1.7;
+}
+
+#lake-piano-image img {
+	width: 72ch;
+	box-shadow: 2px 4px 8px #000d;
+	border-radius: 1rem;
+	border: 1px solid darkgreen;
 }
 
 #signup {
 	padding: 2rem;
-	border: 1px solid var(--dark-blue);
+	border: 1px solid var(--dark-green);
 	border-radius: 1rem;
-	border-width: 2px 4px 6px 2px;
+	/* border-width: 2px 4px 6px 2px; */
+	/* background-image: linear-gradient(#fff2, #0002); */
+	background-color: #C2B0E040;
+	width: 72ch;
+	box-sizing: border-box;
 }
 
 #signup-form {
@@ -101,23 +157,32 @@ body > div {
 	margin-bottom: 1rem;
 }
 
+#signup-form label {
+	font-weight: bold;
+}
+
 #signup-form input {
 	margin-bottom: 1rem;
 }
 
-#signup-form input[type="button"] {
-	margin-bottom: 0;
+#signup-form .color-button {
+	width: max-content;
 }
 
 #foot {
 	width: 100%;
-	background-color: gold;
 	padding: 2rem;
+	background-color: var(--dark-green);
+	color: white;
 }
 
 #foot a {
 	text-decoration: none;
-	color: black;
+	color: white;
+}
+
+#foot .sm-icons {
+	color: white;
 }
 
 .sm-icons {
