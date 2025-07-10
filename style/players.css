@@ -1,0 +1,28 @@
+#content {
+	gap: 2rem;
+}
+
+#content h2 {
+	margin: 1rem;
+}
+
+.profile {
+	display: flex;
+	gap: 1rem;
+	flex-direction: row;
+	text-align: justify;
+	justify-content: center;
+	align-items: center;
+}
+
+.profile img {
+	width: 28ch;
+}
+
+.profile.reversed {
+	flex-direction: row-reverse;
+}
+
+.profile.reversed h4 {
+	text-align: right;
+}
