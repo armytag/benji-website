@@ -74,7 +74,7 @@ body > div {
 #head {
 	background-image:
 		linear-gradient(to right, #fff0, #fffd 30%, #fffd 70%, #fff0),
-		url("images/lake-minnewaska-tall.jpg");
+		url("/images/lake-minnewaska-tall.jpg");
 	background-position: center;
 	background-size: cover;
 	padding: 2rem;
@@ -98,7 +98,7 @@ body > div {
 
 #nav li {
 	list-style: none;
-	padding: 1rem 2rem;
+	padding: 1rem 0;
 }
 
 #nav li:hover {
@@ -109,11 +109,13 @@ body > div {
 #nav a {
 	text-decoration: none;
 	color: white;
+	padding: 1rem 2rem;
 }
 
 #content {
 	width: 100%;
-	padding: 0 2rem;
+	padding: 0 clamp(2rem, calc((100vw - 72ch)/2), 100vw);
+	margin-bottom: 2rem;
 	background: linear-gradient(white, var(--content-bg) 25%, var(--content-bg) 75%, white);
 }
 
@@ -124,49 +126,6 @@ body > div {
 	justify-content: center;
 	align-items: center;
 	gap: 1.5rem;
-}
-
-#save-the-date {
-	max-width: 72ch;
-	line-height: 1.7;
-}
-
-#lake-piano-image img {
-	width: 72ch;
-	box-shadow: 2px 4px 8px #000d;
-	border-radius: 1rem;
-	border: 1px solid darkgreen;
-}
-
-#signup {
-	padding: 2rem;
-	border: 1px solid var(--dark-green);
-	border-radius: 1rem;
-	/* border-width: 2px 4px 6px 2px; */
-	/* background-image: linear-gradient(#fff2, #0002); */
-	background-color: #C2B0E040;
-	width: 72ch;
-	box-sizing: border-box;
-}
-
-#signup-form {
-	display: flex;
-	flex-direction: column;
-	width: 100%;
-	text-align: left;
-	margin-bottom: 1rem;
-}
-
-#signup-form label {
-	font-weight: bold;
-}
-
-#signup-form input {
-	margin-bottom: 1rem;
-}
-
-#signup-form .color-button {
-	width: max-content;
 }
 
 #foot {
