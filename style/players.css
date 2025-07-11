@@ -11,8 +11,9 @@
 	gap: 1rem;
 	flex-direction: row;
 	text-align: justify;
-	justify-content: center;
+	justify-content: left;
 	align-items: center;
+	width: 100%;
 }
 
 .profile img {
