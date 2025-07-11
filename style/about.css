@@ -3,3 +3,7 @@
 	line-height: 1.7;
 }
 
+p:hover {
+	text-align: justify;
+}
+
