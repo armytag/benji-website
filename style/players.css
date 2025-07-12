@@ -35,3 +35,14 @@
 .profile:nth-child(2n+1) h4 {
 	text-align: right;
 }
+
+@media (max-width: 600px) {
+	.profile, .profile:nth-child(2n+1) {
+		flex-direction: column;
+		text-align: center;
+	}
+
+	.profile h4, .profile:nth-child(2n+1) h4 {
+		text-align: center;
+	}
+}
