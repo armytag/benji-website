@@ -1,0 +1,6 @@
+video {
+	max-width: 72ch;
+	max-height: 90vh;
+	border: 1px solid var(--darker-green);
+	border-radius: 4px;
+}
