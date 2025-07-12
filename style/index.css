@@ -4,7 +4,8 @@
 }
 
 #lake-piano-image img {
-	max-width: 72ch;
+	width: 72ch;
+	max-width: calc(100vw - 4rem);
 	box-shadow: 2px 4px 8px #000d;
 	border-radius: 1rem;
 	border: 1px solid darkgreen;

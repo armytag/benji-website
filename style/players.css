@@ -16,6 +16,10 @@
 	width: 100%;
 }
 
+.profile h4 {
+	text-align: left;
+}
+
 .profile img {
 	max-width: 28ch;
 	max-height: 28ch;
@@ -23,10 +27,11 @@
 	border: 1px solid var(--darker-green);
 }
 
-.profile.reversed {
+.profile:nth-child(2n+1) {
 	flex-direction: row-reverse;
+	/* text-align: right; */
 }
 
-.profile.reversed h4 {
+.profile:nth-child(2n+1) h4 {
 	text-align: right;
 }
