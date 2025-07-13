@@ -52,6 +52,11 @@ p, a {
 	cursor: pointer;
 }
 
+.color-button a {
+	color: white;
+	text-decoration: none;
+}
+
 .asterisk {
 	color: var(--asterisk-red);
 	font-size: 150%;
